@@ -1,0 +1,13 @@
+Find by ID - GET /api/user-health/:userId
+Find by ID with Analytics (BMI) - GET /api/user-health/:userId/analytics
+Get All Users - GET /api/user-health
+Create User - POST /api/user-health
+Update User -s PUT /api/user-health/:userId
+Delete User - DELETE /api/user-health/:userId
+
+
+{
+  "weight": 00.0,
+  "height": 000,
+  "age": 00
+}
