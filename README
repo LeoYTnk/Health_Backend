@@ -1,13 +1,24 @@
-Find by ID - GET /api/user-health/:userId
-Find by ID with Analytics (BMI) - GET /api/user-health/:userId/analytics
-Get All Users - GET /api/user-health
-Create User - POST /api/user-health
-Update User -s PUT /api/user-health/:userId
-Delete User - DELETE /api/user-health/:userId
+createdb health_data_db
 
+npm install
 
+npm run migrate
+
+http://localhost:3000
+
+GET /health - check server status
+
+POST /api/users - create a new user
+
+GET /api/users/:userId - get user details
+
+PUT /api/users/:userId - update user information 
 {
-  "weight": 00.0,
-  "height": 000,
-  "age": 00
-}
+  "age": 25,
+  "weight": 70.5,
+  "height": 175
+} # or just one of them to update just that field
+
+GET /api/users/:userId/weight - history - get user's weight history
+GET /api/users/:userId/height - history - get user's height history
+GET /api/users/:userId/complete - history - get user's complete history
